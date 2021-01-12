@@ -1,0 +1,99 @@
+header {
+  height: 900px;
+  display: flex;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 45%;
+  background: black;
+  padding-left: 70px;
+  padding-top: 25px;
+}
+
+.header-right {
+  height: 100%;
+  width: 55%;
+  background-image: url('../img/slider52x.jpg');
+  @include backgroundImages
+}
+
+.header-left-top img{
+  width: 40%;
+}
+
+.header-left-bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:100px 0;
+  padding-right: 100px;
+}
+
+.line{
+  @include openerLine;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: bold;
+  padding-left: 65px;
+}
+
+#description-header {
+  font-size: $descriptionFont;
+  padding-left: 65px;
+}
+
+.header-left-bottom button {
+  margin-left: 65px;
+  @include blackHoverWhiteButtons;
+}
+
+.demos{
+  @include fixedSquare;
+  bottom:450px;
+  right:10px;
+}
+
+.demos i {
+  font-size: 32px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #2787b2
+}
+
+.demos p {
+  @include fixedSquareText;
+}
+
+.onsale{
+  @include fixedSquare;
+  bottom:375px;
+  right:10px;
+}
+
+.onsale p {
+  @include fixedSquareText;
+}
+
+#exponential {
+  color: lightgreen;
+  font-size: 24px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+#exponential sup {
+  font-size: 16px;
+  color:lightgreen;
+}

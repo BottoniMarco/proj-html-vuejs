@@ -1,0 +1,50 @@
+@mixin openerLine {
+  height: 1px;
+  width:40px;
+  background-color: white;
+  display:inline-block;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+
+@mixin backgroundImages {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin blackHoverWhiteButtons {
+  justify-content: center;
+  height: 45px;
+  width: 175px;
+  background: black;
+  border: 1px solid white;
+  color: white;
+  &:hover{
+    justify-content: center;
+    height: 45px;
+    width: 175px;
+    background: white;
+    border: 0px solid white;
+    color: black;
+  }
+}
+
+@mixin fixedSquare {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  border-radius: 10px;
+  background: #FFFFFF;
+  z-index: 2;
+}
+
+@mixin fixedSquareText {
+  color: black;
+  font-size: 10px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-weight: bold;
+}
