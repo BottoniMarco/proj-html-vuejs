@@ -12,90 +12,97 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- header -->
-  <header>
-    <!-- header left -->
-    <div class="header-left">
+  <div id="app">
+    <!-- header -->
+    <header>
+      <!-- header left -->
+      <div class="header-left">
+        <!-- header left top-->
+        <div class="header-left-top">
+          <img src="img/logo-restaurant.png" alt="">
+        </div>
+        <!--/ header left top-->
 
-      <!-- header left top-->
-      <div class="header-left-top">
-        <img src="img/logo-restaurant.png" alt="">
+        <!-- header left bottom-->
+        <div class="header-left-bottom">
+          <p><span class="line"></span>THE BEST TABLE IN TOWN</p>
+
+          <h1>FINE DINING <br>EXPERIENCE</h1>
+          <p id="description-header">Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+          <button type="button" name="button">EXPLORE THE MENU</button>
+        </div>
+        <!--/header left bottom-->
       </div>
-      <!--/ header left top-->
+      <!-- /header left -->
 
-      <!-- header left bottom-->
-      <div class="header-left-bottom">
-        <p><span class="line"></span>THE BEST TABLE IN TOWN</p>
+      <!-- header right-->
+      <div class="header-right">
+        <nav>
+          <ul class="navbar">
+            <li v-for="link in navbarLinks"> {{ link }} </li>
+            <!-- <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li> -->
+          </ul>
+        </nav>
+        <!-- fixed squares -->
+        <div class="demos">
+          <i class="fas fa-archive"></i>
+          <p>Demos</p>
+        </div>
 
-        <h1>FINE DINING <br>EXPERIENCE</h1>
-        <p id="description-header">Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
-        <button type="button" name="button">EXPLORE THE MENU</button>
+        <div class="onsale">
+          <p id="exponential"><sup>$</sup>39</p>
+          <p>On Sale</p>
+        </div>
+        <!--/ fixed squares -->
       </div>
-      <!--/header left bottom-->
-    </div>
-    <!-- /header left -->
+      <!-- /header right-->
+    </header>
+    <!-- /header -->
 
-    <!-- header right-->
-    <div class="header-right">
-      <nav>
-        <ul class="navbar">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+    <!-- main -->
+    <main>
+      <div class="first-box">
+
+      </div>
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="wrapper-footer-top">
+          <img src="img/logo-restaurant.png" alt="">
+          <p>
+            Quam eu proin sit massa condimentum. Volutpat non pulvinar
+            aliquet nunc. Quam eu proin sit massa condimentum.
+          </p>
+          <ul id="link-social">
+            <li <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li <a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li <a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li <a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul id="copyright">
+          <li>Copyright 2012 - 2019 Avada |</li>
+          <li>All Rights Reserved |</li>
+          <li>Powered by <a href="#">WordPress |</a> </li>
+          <li><a href="#">ThemeFusion</a></li>
         </ul>
-      </nav>
-      <!-- fixed squares -->
-      <div class="demos">
-        <i class="fas fa-archive"></i>
-        <p>Demos</p>
       </div>
-
-      <div class="onsale">
-        <p id="exponential"><sup>$</sup>39</p>
-        <p>On Sale</p>
-      </div>
-      <!--/ fixed squares -->
-    </div>
-    <!-- /header right-->
-  </header>
-  <!-- /header -->
-
-  <!-- main -->
-  <main>
-    <div class="first-box">
-
-    </div>
-  </main>
-  <!-- /main -->
-
-  <!-- footer -->
-  <footer>
-    <div class="footer-top">
-      <div class="wrapper-footer-top">
-        <img src="img/logo-restaurant.png" alt="">
-        <p>
-          Quam eu proin sit massa condimentum. Volutpat non pulvinar
-          aliquet nunc. Quam eu proin sit massa condimentum.
-        </p>
-        <ul id="link-social">
-          <li <a href="#">link</a></li>
-          <li <a href="#">link</a></li>
-          <li <a href="#">link</a></li>
-          <li <a href="#">link</a></li>
-          <li <a href="#">link</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-
-    </div>
-  </footer>
-  <!-- /footer -->
+    </footer>
+    <!-- /footer -->
+  </div>
+  <script src="js/script.js" charset="utf-8"></script>
 
 
 </body>
