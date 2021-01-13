@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
 
   <title>Document</title>
 </head>
@@ -40,13 +42,7 @@
         <nav>
           <ul class="navbar">
             <li v-for="link in navbarLinks"> {{ link }} </li>
-            <!-- <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li> -->
+            <li> <a href="#"><i class="fas fa-shopping-cart"></i></a> </li>
           </ul>
         </nav>
         <!-- fixed squares -->
@@ -68,20 +64,39 @@
     <!-- main -->
     <main>
       <div class="intro-box">
-        <div class="intro-box-left">
-          <p>HAC TELLUS, FELIS RISUS AT mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
+        <div class="intro-box-top">
+          <div class="intro-box-left">
+            <p><strong>HAC TELLUS, FELIS RISUS AT</strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
 
-          <p>food is our common ground, a universal experience.</p>
+            <p class="big-font">food is our common ground, a universal experience.</p>
 
-          <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
+            <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
 
-          <img src="img\signature.jpg" alt="">
-        </div>
-        <div class="intro-box-right">
-
+            <img src="img\signature.jpg" alt="">
+          </div>
+          <div class="intro-box-right">
+            <img src="img\hover-image1.png" alt="">
+          </div>
         </div>
         <div class="intro-box-bottom">
-
+          <div class="tables">
+            <img src="img\sushi-1.png" alt="">
+            <h3>THE BEST TABLE IN TOWN</h3>
+            <p>Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.</p>
+            <button type="button" name="button">EXPLORE THE MENU</button>
+          </div>
+          <div class="groups">
+            <img src="img\sushi-2.png" alt="">
+            <h3>Perfect For Groups</h3>
+            <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Orci elementum in aliquet a gravida vivamus aliquam turpis vitae.</p>
+            <button type="button" name="button">MAKE A RESERVATION</button>
+          </div>
+          <div class="fresh">
+            <img src="img\sushi-3.png" alt="">
+            <h3>Fresh produce everyday</h3>
+            <p>Hendrerit amet, volutpat leo non, commodo maecenas scelerisque tincidunt. Morbi vulputate morbi purus quisque sit sagittis orci elementum gravida.</p>
+            <button type="button" name="button">LEARN MORE ABOUT US</button>
+          </div>
         </div>
       </div>
     </main>
@@ -97,20 +112,27 @@
             aliquet nunc. Quam eu proin sit massa condimentum.
           </p>
           <ul id="link-social">
-            <li <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li <a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li <a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li <a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"></a>
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+            <li><a href="#"></a>
+              <i class="fab fa-twitter"></i>
+            </a></li>
+            <li><a href="#"></a>
+              <i class="fab fa-youtube"></i>
+            </a></li>
+            <li><a href="#"></a>
+              <i class="fab fa-instagram"></i>
+            </a></li>
+            <li><a href="#"></a>
+              <i class="fab fa-linkedin-in"></i>
+            </a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <ul id="copyright">
-          <li>Copyright 2012 - 2019 Avada |</li>
-          <li>All Rights Reserved |</li>
-          <li>Powered by <a href="#">WordPress |</a> </li>
-          <li><a href="#">ThemeFusion</a></li>
+          <li v-for="copyright in footerCopyright"> <a href="#"></a>{{ copyright }}</li>
         </ul>
       </div>
     </footer>

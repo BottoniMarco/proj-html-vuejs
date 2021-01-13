@@ -2,8 +2,9 @@ var app = new Vue({
   el: "#app",
   data: {
     navbarLinks:[
-      "link1","link2","link3","link4","link5","link6","link7","link8"
-    ]
+      "Home","Culinary History","Our Team","Our Menu","Takeout","Bulletin","reservations"
+    ],
+    footerCopyright:["Copyright 2012 - 2019 Avada |","All Rights Reserved |","Powered by WordPress |","ThemeFusion"]
   },
   methods: {
 

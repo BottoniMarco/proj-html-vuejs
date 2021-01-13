@@ -29,6 +29,23 @@
   }
 }
 
+@mixin whiteHoverBBorderButtons {
+  justify-content: center;
+  height: 45px;
+  width: 175px;
+  background: white;
+  border: 1px solid lightgrey;
+  color: black;
+  &:hover{
+    justify-content: center;
+    height: 45px;
+    width: 175px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+  }
+}
+
 @mixin fixedSquare {
   width: 70px;
   height: 70px;

@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 45%;
+  width: 42%;
   background: black;
   padding-left: 70px;
   padding-top: 25px;
@@ -15,7 +15,7 @@ header {
 
 .header-right {
   height: 100%;
-  width: 55%;
+  width: 58%;
   background-image: url('../img/slider52x.jpg');
   @include backgroundImages
 }
