@@ -46,6 +46,25 @@
   }
 }
 
+@mixin transparentHoverBlackButtons {
+  justify-content: center;
+  height: 45px;
+  width: 175px;
+  border: 1px solid white;
+  background: rgba(0,0,0,0.0);
+  color: white;
+  font-weight: bold;
+  &:hover{
+    justify-content: center;
+    height: 45px;
+    width: 175px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+  }
+}
+
+
 @mixin fixedSquare {
   width: 70px;
   height: 70px;
