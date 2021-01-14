@@ -41,8 +41,15 @@
       <div class="header-right">
         <nav>
           <ul class="navbar">
-            <li v-for="link in navbarLinks"> {{ link }} </li>
-            <li> <a href="#"><i class="fas fa-shopping-cart"></i></a> </li>
+            <!-- <li v-for="link in navbarLinks">  </li> -->
+            <li v-for="link in navbarLinks">
+              <a :href="link.link">{{ link.navitem }} <span v-if="link.new" class="new">new</span> </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- fixed squares -->
@@ -100,9 +107,7 @@
         </div>
       </div>
       <div class="best-table">
-        <div class="best-table-left">
-
-        </div>
+        <div class="best-table-left"></div>
         <div class="best-table-right">
           <p><span class="line"></span>FINE DINING EXPERIENCE</p>
 
@@ -167,11 +172,9 @@
 
             <div class="long-line"></div>
             <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.
-
             </p>
 
             <button type="button" name="button">READ FULL ARTICLE</button>
-
           </div>
         </div>
       </div>
@@ -179,6 +182,48 @@
         <img src="img\page52x.jpg" alt="">
         <p id="price">KUNG PAO CHICKEN - $32</p>
         <p id="promotions-title">Latest news & promotions</p>
+        <div class="promotions-bottom">
+          <div class="coffee">
+            <img src="img\blog92x.jpg" alt="">
+            <h3>THE BEST COFFEE IN TOWN</h3>
+            <ul>
+              <li>By admin |</li>
+              <li>January 7th, 2020 |</li>
+              <li>Categories: News</li>
+            </ul>
+          </div>
+          <div class="menu">
+            <img src="img\blog72x.jpg" alt="">
+            <h3>DISCOVER OUR NEW MENU</h3>
+            <ul>
+              <li>By admin |</li>
+              <li>January 7th, 2020 |</li>
+              <li>Categories: News</li>
+            </ul>
+          </div>
+          <div class="square">
+            <img src="img\blog82x.jpg" alt="">
+            <h3>WE NOW ACCEPT SQUARE!</h3>
+            <ul>
+              <li>By admin |</li>
+              <li>January 7th, 2020 |</li>
+              <li>Categories: News</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="takeout">
+        <div class="takeout-left">
+
+        </div>
+        <div class="takeout-right">
+          <p><span class="line"></span>ENJOY YOUR MEAL AT HOME</p>
+
+          <h1>TAKEOUT NOW AVAILABLE</h1>
+          <p id="takeout-description">Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+          <button  type="button" name="button"><i class="fas fa-car"></i>VIEW TAKEOUT MENU</button>
+
+        </div>
       </div>
     </main>
     <!-- /main -->
@@ -193,21 +238,11 @@
             aliquet nunc. Quam eu proin sit massa condimentum.
           </p>
           <ul id="link-social">
-            <li><a href="#"></a>
-              <i class="fab fa-facebook-f"></i>
-            </a></li>
-            <li><a href="#"></a>
-              <i class="fab fa-twitter"></i>
-            </a></li>
-            <li><a href="#"></a>
-              <i class="fab fa-youtube"></i>
-            </a></li>
-            <li><a href="#"></a>
-              <i class="fab fa-instagram"></i>
-            </a></li>
-            <li><a href="#"></a>
-              <i class="fab fa-linkedin-in"></i>
-            </a></li>
+            <li v-for="social in footerSocial">
+              <a :href="social.link">
+              <i :class="social.social"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
