@@ -229,6 +229,7 @@
 }
 //  /promotions
 
+// takeout
 .takeout{
   height: 850px;
   width: 100%;
@@ -264,10 +265,110 @@
     font-size: 16px;
     height: 45px;
     width: 225px;
+    &:hover{
+      font-size: 16px;
+      height: 45px;
+      width: 225px;
+      i{
+        color: black;
+      }
+    }
 
   }
   i{
     padding-right: 10px;
   }
-
 }
+//  /takeout
+
+// menu-box
+.menu-box {
+  height: 1290px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-1 {
+  @include whiteMenuBoxLayout;
+}
+
+.menu-2 {
+  height: 960px;
+  width: 400px;
+  background-image:linear-gradient(to bottom ,rgba(0,0,0,1), rgba(0,0,0, 0.3)), url('../img/misc22x.jpg');
+  @include backgroundImages;
+  padding:80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  .menu-title{
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .dish{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 40px;
+    .menu-prices{
+    font-size: 16px;
+    font-weight: lighter;
+    padding-left: 20px;
+    }
+  }
+  .dish-description{
+    font-size: 20px;
+    padding:30px 20px;
+  }
+}
+
+.menu-3 {
+@include whiteMenuBoxLayout;
+}
+// /takeout
+
+// abalone
+.abalone{
+  height: 870px;
+  width: 100%;
+  background-image: url('../img/hero42x.jpg');
+  @include backgroundImages;
+  display: flex;
+  align-items: center;
+}
+
+.abalone-description-box {
+  position: relative;
+  height: 640px;
+  width: 420px;
+  display: flex;
+  background: black;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 80px 50px;
+  margin-left: 100px;
+  h2{
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.2;
+    #abalone-price{
+      position: absolute;
+      top: 115px;
+      right: 60px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+  #description-abalone{
+    font-size: $descriptionFont;
+    line-height: 1.5;
+  }
+  button{
+    @include blackHoverWhiteButtons;
+  }
+}
+// /abalone

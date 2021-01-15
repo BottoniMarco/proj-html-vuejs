@@ -3,6 +3,7 @@ header {
   display: flex;
 }
 
+// header-left
 .header-left {
   display: flex;
   flex-direction: column;
@@ -13,15 +14,10 @@ header {
   padding-top: 25px;
 }
 
-.header-right {
-  height: 100%;
-  width: 58%;
-  background-image: url('../img/slider52x.jpg');
-  @include backgroundImages
-}
-
-.header-left-top img{
-  width: 40%;
+.header-left-top{
+  img{
+    width: 40%;
+  }
 }
 
 .header-left-bottom {
@@ -31,69 +27,73 @@ header {
   justify-content: space-around;
   padding:100px 0;
   padding-right: 100px;
+  .line{
+    @include openerLine;
+  }
+  h1 {
+    font-size: 66px;
+    font-weight: bold;
+    padding-left: 65px;
+    line-height: 1.3;
+  }
+  #description-header {
+    font-size: $descriptionFont;
+    padding-left: 65px;
+  }
+  button {
+    margin-left: 65px;
+    @include blackHoverWhiteButtons;
+  }
 }
+//  /header-left
 
-.line{
-  @include openerLine;
+// header-right
+.header-right {
+  height: 100%;
+  width: 58%;
+  background-image: url('../img/slider52x.jpg');
+  @include backgroundImages
 }
+//  /header-right
 
-h1 {
-  font-size: 58px;
-  font-weight: bold;
-  padding-left: 65px;
-}
-
-#description-header {
-  font-size: $descriptionFont;
-  padding-left: 65px;
-}
-
-.header-left-bottom button {
-  margin-left: 65px;
-  @include blackHoverWhiteButtons;
-}
-
+// fixed-squares
 .demos{
   @include fixedSquare;
   bottom:450px;
   right:10px;
-}
-
-.demos i {
-  font-size: 32px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  color: #2787b2
-}
-
-.demos p {
-  @include fixedSquareText;
+  i {
+    font-size: 32px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #2787b2
+  }
+  p {
+    @include fixedSquareText;
+  }
 }
 
 .onsale{
   @include fixedSquare;
   bottom:375px;
   right:10px;
+  p {
+    @include fixedSquareText;
+  }
+  #exponential {
+    color: lightgreen;
+    font-size: 24px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    sup {
+      font-size: 16px;
+      color:lightgreen;
+    }
+  }
 }
-
-.onsale p {
-  @include fixedSquareText;
-}
-
-#exponential {
-  color: lightgreen;
-  font-size: 24px;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-
-#exponential sup {
-  font-size: 16px;
-  color:lightgreen;
-}
+//  /fixed-squares

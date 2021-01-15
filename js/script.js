@@ -6,12 +6,7 @@ var app = new Vue({
         {link:"link", navitem:"Culinary History", new:false}, {link:"link", navitem:"Our Menu", new:false},
         {link:"link", navitem:"Takeout", new:true},
         {link:"link", navitem:"Bulletin", new:false},
-        {link:"link", navitem:"reservations", new:false},        
-    ],
-    footerCopyright:[
-      "All Rights Reserved |",
-      "Powered by WordPress |",
-      "ThemeFusion"
+        {link:"link", navitem:"reservations", new:false},
     ],
     footerSocial:[
       {link:"facebook", social:"fab fa-facebook-f"},
@@ -19,7 +14,11 @@ var app = new Vue({
       {link:"youtube", social:"fab fa-youtube"},
       {link:"instagram", social:"fab fa-instagram"},
       {link:"linkedin", social:"fab fa-linkedin"}
-
+    ],
+    footerCopyright:[
+      "All Rights Reserved |",
+      "Powered by WordPress |",
+      "ThemeFusion"
     ]
   },
   methods: {
@@ -28,9 +27,6 @@ var app = new Vue({
   created: function () {
     var years = new Date().getFullYear();
     var copyright = "Copyright 2012 -"+ years+"  Avada |"
-    console.log(copyright);
     this.footerCopyright.unshift(copyright);
-    console.log(this.footerCopyright);
-
   }
 })
